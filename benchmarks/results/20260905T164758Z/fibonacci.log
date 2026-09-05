@@ -1,0 +1,23 @@
+```python
+def fibonacci(n: int) -> int:
+    if n < 0:
+        raise ValueError("n must be a non-negative integer")
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    a, b = 0, 1
+    for _ in range(2, n + 1):
+        a, b = b, a + b
+    return b
+```<|im_end|>
+
+prompt tokens: 50
+output tokens: 102
+time to first token: 2455.742 ms
+decode speed: 72.722 tokens/s
+decode policy: MTP depth 4
+speculative rounds: 23
+MTP acceptance: 84.783% (78/92)
+accepted tokens/round: 4.391
+speculative emitted: 101 tokens

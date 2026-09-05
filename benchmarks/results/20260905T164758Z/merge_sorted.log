@@ -1,0 +1,25 @@
+```python
+def merge_sorted(left: list[int], right: list[int]) -> list[int]:
+    i = j = 0
+    result = []
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
+```<|im_end|>
+
+prompt tokens: 51
+output tokens: 108
+time to first token: 2502.787 ms
+decode speed: 62.179 tokens/s
+decode policy: MTP depth 3
+speculative rounds: 30
+MTP acceptance: 85.556% (77/90)
+accepted tokens/round: 3.567
+speculative emitted: 107 tokens

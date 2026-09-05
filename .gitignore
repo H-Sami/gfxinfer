@@ -1,0 +1,17 @@
+/build/
+/out/
+/models/
+/.local/
+*.gfxi
+*.conversion.json
+*.prof
+*.trace
+.cache/
+.DS_Store
+*.swp
+__pycache__/
+
+/benchmarks/results/*
+!/benchmarks/results/20260905T164758Z/
+!/benchmarks/results/20260905T164758Z/*.log
+!/benchmarks/results/20260905T164758Z/*.py
